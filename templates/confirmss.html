@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+% extends "base.html" %} 
 {% block content %}
-<!--{% if u_error|length==0 and p_errors|length==0 and pv_error|length==0 and em_error|length==0 %}-->
+<!-- {% if {{error}}=="" and {{p_error}}=="" and {{pv_error}}=="" and {{em_error}}=="" %}
 <h1>SignUp</h1>
 <form action="/" method="POST">
     <table>
@@ -44,9 +44,9 @@
     </table>
 </form>
 <hr/>
-<h3>Welcome, registration complete! Username: {{ username  }} - email: {{ email }}. Remenber your password for the next login</h3>
-
-<!--{% elif u_error|length>0 or p_errors|length>0 or pv_error|length>0 or em_error|length>0 %}
+<h3>Welcome, registration complete! Username: {{username}} - email: {{email}} . Remenber your password for the next login</h3>
+{%  else% } -->
+<!--{% elif u_error|length>0 or p_errors|length>0 or pv_error|length>0 or em_error|length>0 %}-->
 <h1>SignUp</h1>
 <form action="/" method="POST">
     <table>
@@ -91,5 +91,5 @@
 </form>
 <hr/>
 <h3>Sign Up failled. Follow the instructions and try it again.</h3>
-{% endif %}-->
+<!--{% endif %}-->
 {% endblock %}
