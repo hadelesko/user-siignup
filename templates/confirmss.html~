@@ -55,8 +55,9 @@
                 <label>Username</label>
             </td>
             <td>
-                <input type="text" name="username"> </td>
-            <h3>{{% u_error %}}</h3>
+                <input type="text" name="username">
+            </td>
+            <h3><span style="color:red">{{ u_error }}</h3></span>
         </tr>
         <tr>
             <td>
@@ -64,7 +65,7 @@
             </td>
             <td>
                 <input type="password" name="password">
-            </td><h3>{{% p_error %}}</h3>
+            </td><h3><span style="color:red">{{ p_error }}</h3></span>
         </tr>
         <tr>
             <td>
@@ -72,7 +73,7 @@
             </td>
             <td>
                 <input type="password" name="verify_password">
-            </td><h3>{{% pv_error %}}</h3>
+            </td><h3><span style="color:red">{{ pv_error }}</h3></span>
         </tr>
         <tr>
             <td>
@@ -80,7 +81,7 @@
             </td>
             <td>
                 <input type="email" name="email">
-            </td><h3>{{% em_error %}}</h3>
+            </td><h3><span style="color:red">{{ em_error }}</h3></span>
         </tr>
         <tr>
             <td>
