@@ -38,7 +38,7 @@ def confirm_signup():
 		return errors, errors_massage
 
 	if len(password) not in range(3, 21) or password.find(' ')!=-1:
-		errors["password"] = "The '{0}'length has not to be out of the range 3 to 21 and '{1}' must match the given '{2}'".format("password", "verify_password", "password")
+		#errors["password"] = "The '{0}'length has not to be out of the range 3 to 21 and '{1}' must match the given '{2}'".format("password", "verify_password", "password")
 		pr= "The '{0}'length has not to be out of the range 3 to 21 and '{1}' must match the given '{2}'".format("password", "verify_password", "password")
 		p_error=pr
 		return p_error
@@ -49,7 +49,7 @@ def confirm_signup():
 		return p_error
 
 	if verify_password!=password:
-		errors["verify_password"] = "The '{0}'must match the entered '{1}'".format("verify_password",  "password")
+		#errors["verify_password"] = "The '{0}'must match the entered '{1}'".format("verify_password",  "password")
 		pvr="The '{0}'must match the entered '{1}'".format("verify_password",  "password")
 		pv_error=pvr
 		return pv_error
@@ -60,7 +60,7 @@ def confirm_signup():
 		return pv_error
 
 	if len(email) not in range(3, 21) or email.find("@")==-1 or email.find(".")==-1 or email.find(" ")!=-1:
-		errors["email"] = "The '{0}'must contain '{1}' has no space .It must be 3 to 21 character length ".format("email","@ .")
+		#errors["email"] = "The '{0}'must contain '{1}' has no space .It must be 3 to 21 character length ".format("email","@ .")
 		emr="The '{0}'must contain '{1}' has no space .It must be 3 to 21 character length ".format("email","@ .")
 		em_error=emr
 		return em_error

@@ -25,7 +25,7 @@ def confirm_signup():
 	pv_error= ""     #errors_massage[2]   #=(list(errors.values()))[2]
 	em_error= ""     #errors_massage[3]   #=(list(errors.values()))[3]
 	if len(username)==0 or len(username) not in range(3, 21) or username.find(' ')!=-1:
-		errors["username"] = "The '{0}' have not to be empty and has no space.The length has not to be out of the range 3 to 21".format("username")
+		#errors["username"] = "The '{0}' have not to be empty and has no space.The length has not to be out of the range 3 to 21".format("username")
 		ur="The '{0}' have not to be empty and has no space.The length has not to be out of the range 3 to 21".format("username")
 		u_error=ur
 		errors_massage.append(ur)
