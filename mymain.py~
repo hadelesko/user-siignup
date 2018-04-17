@@ -1,7 +1,7 @@
 from flask import Flask, request, redirect, render_template
 import cgi
 import os
-
+import jinja2
 
 app = Flask(__name__)
 app.config['DEBUG'] = True      # displays runtime errors in the browser, too
@@ -81,4 +81,5 @@ def confirm_signup():
 		#case errors == at least field has errors
 	else:
 		return render_template('confirmss.html', u_error=errors_massage[0], p_error=errors_massage[1], pv_error=errors_massage[2], em_error=errors_massage[3], username=username, email=email)
-app.run()
+if __name__ == '__main__':
+    app.run()

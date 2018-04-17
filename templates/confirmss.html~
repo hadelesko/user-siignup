@@ -10,8 +10,10 @@
             </td>
             <td>
                 <input type="text" name="username">
+            <td>
+            <td>
+            	<h6 style="color:red">{{ u_error }}</h6>
             </td>
-            <h3><span style="color:red">{{ u_error }}</h3></span>
         </tr>
         <tr>
             <td>
@@ -19,7 +21,10 @@
             </td>
             <td>
                 <input type="password" name="password">
-            </td><h3><span style="color:red">{{ p_error }}</h3></span>
+            </td>
+            <td>	
+            	<h6 style="color:red">{{ p_error }}</h6>
+            </td>
         </tr>
         <tr>
             <td>
@@ -27,7 +32,10 @@
             </td>
             <td>
                 <input type="password" name="verify_password">
-            </td><h3><span style="color:red">{{ pv_error }}</h3></span>
+            </td>
+            <td>
+            	<h6 style="color:red">{{ pv_error }}</h6>
+            </td>
         </tr>
         <tr>
             <td>
@@ -35,7 +43,10 @@
             </td>
             <td>
                 <input type="email" name="email">
-            </td><h3><span style="color:red">{{ em_error }}</h3></span>
+            </td>
+            <td>
+            	<h6 style="color:red">{{ em_error }}</h6>
+            </td>
         </tr>
         <tr>
             <td>
