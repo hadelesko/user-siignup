@@ -1,52 +1,6 @@
-% extends "base.html" %} 
+{% extends "base.html" %} 
 {% block content %}
-<!-- {% if {{error}}=="" and {{p_error}}=="" and {{pv_error}}=="" and {{em_error}}=="" %}
-<h1>SignUp</h1>
-<form action="/" method="POST">
-    <table>
-        <tr>
-            <td>
-                <label>Username</label>
-            </td>
-            <td>
-                <input type="text" name="username"> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label> Password</label>
-            </td>
-            <td>
-                <input type="password" name="password">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label> Verify password</label>
-            </td>
-            <td>
-                <input type="password" name="verify_password">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label> Email (optional)</label>
-            </td>
-            <td>
-                <input type="email" name="email">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="submit" value="Submit" />
-            </td>
-        </tr>
-    </table>
-</form>
-<hr/>
-<h3>Welcome, registration complete! Username: {{username}} - email: {{email}} . Remenber your password for the next login</h3>
-{%  else% } -->
-<!--{% elif u_error|length>0 or p_errors|length>0 or pv_error|length>0 or em_error|length>0 %}-->
+
 <h1>SignUp</h1>
 <form action="/" method="POST">
     <table>
@@ -92,5 +46,4 @@
 </form>
 <hr/>
 <h3>Sign Up failled. Follow the instructions and try it again.</h3>
-<!--{% endif %}-->
 {% endblock %}
