@@ -60,19 +60,19 @@ def confirm_signup():
 		errors_massage.append(em_error)
 		#return em_error
 	else:
-		if len(email)<3 or len(email)>20:
-			em_error="The '{0}'must contain '{1}' has no space .It must be 3 to 21 character length ".format("email","@ .")
+#		if len(email)<3 or len(email)>20:
+#			em_error="The '{0}'must contain '{1}' has no space .It must be 3 to 21 character length ".format("email","@ .")
+#			errors_massage.append(em_error)
+#			#return em_error
+#		else:
+		if email.find("@")==-1 or email.find(".")==-1 or email.find(" ")!=-1:
+			em_error=emr="The '{0}'must contain '{1}' has no space .It must be 3 to 21 character length ".format("email","@ .")
 			errors_massage.append(em_error)
 			#return em_error
 		else:
-			if email.find("@")==-1 or email.find(".")==-1 or email.find(" ")!=-1:
-				em_error=emr="The '{0}'must contain '{1}' has no space .It must be 3 to 21 character length ".format("email","@ .")
-				errors_massage.append(em_error)
-				#return em_error
-			else:
-				em_error=""
-				errors_massage.append(em_error)
-				#return em_error
+			em_error=""
+			errors_massage.append(em_error)
+			#return em_error
 
 	if len(errors_massage[0])==0 and len(errors_massage[1])==0 and len(errors_massage[2])==0 and len(errors_massage[3])==0:
 		#if len(u_error)==0 and len(p_error)==0 and len(pv_error)==0 and len(em_error)==0:

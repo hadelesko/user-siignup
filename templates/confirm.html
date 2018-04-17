@@ -1,95 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-<!--{% if u_error|length==0 and p_errors|length==0 and pv_error|length==0 and em_error|length==0 %}-->
+
 <h1>SignUp</h1>
-<form action="/" method="POST">
-    <table>
-        <tr>
-            <td>
-                <label>Username</label>
-            </td>
-            <td>
-                <input type="text" name="username"> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label> Password</label>
-            </td>
-            <td>
-                <input type="password" name="password">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label> Verify password</label>
-            </td>
-            <td>
-                <input type="password" name="verify_password">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label> Email (optional)</label>
-            </td>
-            <td>
-                <input type="email" name="email">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="submit" value="Submit" />
-            </td>
-        </tr>
-    </table>
-</form>
+
 <hr/>
+
 <h3>Welcome, registration complete! Username: {{ username  }} - email: {{ email }}. Remenber your password for the next login</h3>
 
-<!--{% elif u_error|length>0 or p_errors|length>0 or pv_error|length>0 or em_error|length>0 %}
-<h1>SignUp</h1>
-<form action="/" method="POST">
-    <table>
-        <tr>
-            <td>
-                <label>Username</label>
-            </td>
-            <td>
-                <input type="text" name="username"> </td>
-            <h3>{{ u_error }}</h3>
-        </tr>
-        <tr>
-            <td>
-                <label> Password</label>
-            </td>
-            <td>
-                <input type="password" name="password">
-            </td><h3>{{ p_error }}</h3>
-        </tr>
-        <tr>
-            <td>
-                <label> Verify password</label>
-            </td>
-            <td>
-                <input type="password" name="verify_password">
-            </td><h3>{{ pv_error }}</h3>
-        </tr>
-        <tr>
-            <td>
-                <label> Email (optional)</label>
-            </td>
-            <td>
-                <input type="email" name="email">
-            </td><h3>{{ em_error }}</h3>
-        </tr>
-        <tr>
-            <td>
-                <input type="submit" value="Submit"/>
-            </td>
-        </tr>
-    </table>
-</form>
-<hr/>
-<h3>Sign Up failled. Follow the instructions and try it again.</h3>
-{% endif %}-->
+
 {% endblock %}
